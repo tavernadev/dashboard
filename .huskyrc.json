@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD",
+    "pre-commit": "npm run precommit && lerna run --concurrency 1 --stream precommit --since HEAD",
     "pre-push": "npm test"
   }
 }

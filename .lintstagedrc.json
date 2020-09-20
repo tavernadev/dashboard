@@ -1,0 +1,5 @@
+{
+  "*.md": [
+    "remark -o -r .remarkrc.json"
+  ]
+}

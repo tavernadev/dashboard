@@ -1,6 +1,9 @@
 {
   "ignores": [
     "husky",
-    "lint-staged"
+    "lint-staged",
+    "remark-lint",
+    "remark-preset-lint-recommended",
+    "remark-validate-links"
   ]
 }
