@@ -8,7 +8,6 @@
     "remark-lint-emphasis-marker",
     "remark-lint-strong-marker",
     "remark-lint-alphabetize-lists",
-    "remark-lint-appropriate-heading",
     "remark-lint-double-link",
     "remark-validate-links"
   ]

@@ -40,7 +40,6 @@
     "remark-cli": "^8.0.1",
     "remark-lint": "^7.0.1",
     "remark-lint-alphabetize-lists": "^3.0.0",
-    "remark-lint-appropriate-heading": "^2.0.4",
     "remark-lint-double-link": "^0.1.2",
     "remark-lint-emphasis-marker": "^2.0.1",
     "remark-lint-strong-marker": "^2.0.1",
