@@ -11,6 +11,8 @@
     "test:audit": "npm audit",
     "test:js": "standard",
     "test:md": "remark -f -r .remarkrc.json .",
+    "autofix": "npm-run-all autofix:*",
+    "autofix:js": "standard --fix",
     "autofix:md": "remark . -o -r .remarkrc.json",
     "start": "lerna run --stream --parallel start"
   },
