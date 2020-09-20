@@ -1,3 +1,3 @@
-# Dashboard - Docs
+# Docs
 
 Docs for Dashboard
