@@ -1,5 +1,6 @@
 {
   "ignores": [
-    "husky"
+    "husky",
+    "lint-staged"
   ]
 }
