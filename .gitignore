@@ -1,0 +1,5 @@
+# Files
+*.log
+
+# Npm Dependencies
+node_modules

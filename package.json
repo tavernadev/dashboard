@@ -1,0 +1,32 @@
+{
+  "name": "dashboard",
+  "description": "SRE Dashboard for Taverna Dev",
+  "scripts": {
+    "clean": "lerna clean --yes && rm -rf node_modules/",
+    "postinstall": "lerna bootstrap",
+    "test": "npm-run-all test:*",
+    "test:audit": "npm audit",
+    "test:depcheck": "depcheck",
+    "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavernadev/dashboard.git"
+  },
+  "author": {
+    "name": "Taverna Dev",
+    "email": "contato@taverna.dev",
+    "url": "https://taverna.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tavernadev/dashboard/issues"
+  },
+  "homepage": "https://taverna.dev/dashboard",
+  "devDependencies": {
+    "depcheck": "^1.2.0",
+    "lerna": "^3.22.1",
+    "lockfile-lint": "^4.3.7",
+    "npm-run-all": "^4.1.5"
+  }
+}
