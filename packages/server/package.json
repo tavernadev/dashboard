@@ -1,0 +1,9 @@
+{
+  "name": "@dashboard/server",
+  "version": "0.0.1",
+  "description": "Server Api for Dashboard",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "license": "MIT"
+}

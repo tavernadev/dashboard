@@ -1,0 +1,10 @@
+{
+  "name": "@dashboard/client",
+  "version": "0.0.1",
+  "description": "Client React for Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "license": "MIT"
+}

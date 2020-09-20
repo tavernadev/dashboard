@@ -1,0 +1,9 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "chenxsan.vscode-standardjs"
+  },
+  "editor.defaultFormatter": "chenxsan.vscode-standardjs",
+  "editor.formatOnSave": true,
+  "standard.enable": true,
+  "standard.autoFixOnSave": true,
+}
