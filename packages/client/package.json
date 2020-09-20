@@ -4,7 +4,8 @@
   "description": "Client React for Dashboard",
   "main": "index.js",
   "scripts": {
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "start": "node index.js"
   },
   "license": "MIT"
 }

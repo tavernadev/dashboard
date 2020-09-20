@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "Server Api for Dashboard",
   "scripts": {
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "start": "node server.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

@@ -3,12 +3,14 @@
   "description": "SRE Dashboard for Taverna Dev",
   "scripts": {
     "clean": "lerna clean --yes && rm -rf node_modules/",
+    "install": "lerna bootstrap --ci",
     "precommit": "lint-staged",
     "test": "npm-run-all test:*",
     "test:depcheck": "depcheck",
     "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json",
     "test:audit": "npm audit",
-    "test:js": "standard"
+    "test:js": "standard",
+    "start": "lerna run --stream --parallel start"
   },
   "repository": {
     "type": "git",
