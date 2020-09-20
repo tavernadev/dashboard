@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "license": "MIT",
   "dependencies": {
