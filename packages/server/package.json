@@ -4,7 +4,14 @@
   "description": "Server Api for Dashboard",
   "scripts": {
     "precommit": "lint-staged",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "npm-run-all -c test:*",
+    "test:depcheck": "depcheck",
+    "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json",
+    "test:audit": "npm audit",
+    "test:eslint": "eslint . --config=.eslintrc.json --max-warnings 0",
+    "autofix": "npm-run-all -c autofix:*",
+    "autofix:eslint": "eslint . --fix --config=.eslintrc.json"
   },
   "license": "MIT",
   "dependencies": {

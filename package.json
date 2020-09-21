@@ -5,15 +5,16 @@
     "precommit": "lint-staged",
     "clean": "lerna clean --yes && rm -rf node_modules/",
     "install": "lerna bootstrap --ci",
-    "test": "npm-run-all test:*",
+    "test": "npm-run-all -c test:*",
     "test:depcheck": "depcheck",
     "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json",
     "test:audit": "npm audit",
-    "test:js": "standard",
     "test:md": "remark -f .",
-    "autofix": "npm-run-all autofix:*",
-    "autofix:js": "standard --fix",
+    "test:packages": "lerna run test --no-bail --stream --parallel",
+    "autofix": "npm-run-all -c autofix:*",
+    "autofix:js": "eslint './packages/**/*.js' --fix --config=.eslintrc.json",
     "autofix:md": "remark . -o",
+    "autofix:packages": "lerna run autofix --no-bail --stream --parallel",
     "autofix:test": "npm run test",
     "start": "lerna run --stream --parallel start"
   },
@@ -33,6 +34,14 @@
   "homepage": "https://taverna.dev/dashboard",
   "devDependencies": {
     "depcheck": "^1.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-jsx": "^8.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
     "lint-staged": "^10.4.0",
@@ -45,7 +54,6 @@
     "remark-lint-emphasis-marker": "^2.0.1",
     "remark-lint-strong-marker": "^2.0.1",
     "remark-preset-lint-recommended": "^4.0.1",
-    "remark-validate-links": "^10.0.2",
-    "standard": "^14.3.4"
+    "remark-validate-links": "^10.0.2"
   }
 }

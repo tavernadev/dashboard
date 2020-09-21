@@ -8,6 +8,13 @@
     "remark-lint-double-link",
     "remark-lint-emphasis-marker",
     "remark-lint-strong-marker",
-    "remark-validate-links"
+    "remark-validate-links",
+    "eslint-config-standard",
+    "eslint-config-standard-jsx",
+    "eslint-plugin-import",
+    "eslint-plugin-node",
+    "eslint-plugin-promise",
+    "eslint-plugin-react",
+    "eslint-plugin-standard"
   ]
 }

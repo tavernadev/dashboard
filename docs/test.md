@@ -1,3 +1,0 @@
-# Docs
-
-Docs for Dashboard

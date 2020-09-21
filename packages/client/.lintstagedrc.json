@@ -1,5 +1,5 @@
 {
-  "*.js": [
-    "standard --fix"
+  "*.{js,jsx}": [
+    "eslint --ext .js,.jsx --fix --config=.eslintrc.json --max-warnings 0"
   ]
 }

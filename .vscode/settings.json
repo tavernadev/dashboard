@@ -1,11 +1,14 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
   "[javascript]": {
-    "editor.defaultFormatter": "chenxsan.vscode-standardjs"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[markdown]": {
     "editor.defaultFormatter": "drewbourne.vscode-remark-lint"
   },
-  "editor.formatOnSave": true,
-  "standard.enable": true,
-  "standard.autoFixOnSave": true
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true
 }
