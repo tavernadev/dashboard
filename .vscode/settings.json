@@ -6,9 +6,11 @@
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "drewbourne.vscode-remark-lint"
-  },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "standard.enable": false,
+  "eslint.workingDirectories": ["/", "packages/client", "packages/server"],
+  "eslint.options": {
+    "extensions": [".js", ".jsx"]
+  }
 }

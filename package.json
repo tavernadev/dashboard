@@ -12,7 +12,6 @@
     "test:md": "remark -f .",
     "test:packages": "lerna run test --no-bail --stream --parallel",
     "autofix": "npm-run-all -c autofix:*",
-    "autofix:js": "eslint './packages/**/*.js' --fix --config=.eslintrc.json",
     "autofix:md": "remark . -o",
     "autofix:packages": "lerna run autofix --no-bail --stream --parallel",
     "autofix:test": "npm run test",

@@ -9,6 +9,7 @@
     "remark-lint-emphasis-marker",
     "remark-lint-strong-marker",
     "remark-validate-links",
+    "eslint",
     "eslint-config-standard",
     "eslint-config-standard-jsx",
     "eslint-plugin-import",
