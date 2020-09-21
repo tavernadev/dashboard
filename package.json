@@ -10,10 +10,11 @@
     "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json",
     "test:audit": "npm audit",
     "test:js": "standard",
-    "test:md": "remark -f -r .remarkrc.json .",
+    "test:md": "remark -f .",
     "autofix": "npm-run-all autofix:*",
     "autofix:js": "standard --fix",
-    "autofix:md": "remark . -o -r .remarkrc.json",
+    "autofix:md": "remark . -o",
+    "autofix:test": "npm run test",
     "start": "lerna run --stream --parallel start"
   },
   "repository": {

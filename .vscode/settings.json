@@ -2,8 +2,10 @@
   "[javascript]": {
     "editor.defaultFormatter": "chenxsan.vscode-standardjs"
   },
-  "editor.defaultFormatter": "chenxsan.vscode-standardjs",
+  "[markdown]": {
+    "editor.defaultFormatter": "drewbourne.vscode-remark-lint"
+  },
   "editor.formatOnSave": true,
   "standard.enable": true,
-  "standard.autoFixOnSave": true,
+  "standard.autoFixOnSave": true
 }
