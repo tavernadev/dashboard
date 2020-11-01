@@ -11,8 +11,8 @@
     "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json",
     "test:audit": "npm audit",
     "test:eslint": "eslint . --ext .js,.jsx --config=.eslintrc.json --max-warnings 0",
-    "autofix": "npm-run-all -c autofix:*",
-    "autofix:eslint": "eslint . --ext .js,.jsx --fix --config=.eslintrc.json"
+    "fix": "npm-run-all -c fix:*",
+    "fix:eslint": "eslint . --ext .js,.jsx --fix --config=.eslintrc.json"
   },
   "license": "MIT",
   "dependencies": {

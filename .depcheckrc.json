@@ -16,6 +16,7 @@
     "eslint-plugin-node",
     "eslint-plugin-promise",
     "eslint-plugin-react",
-    "eslint-plugin-standard"
+    "eslint-plugin-standard",
+    "npm-package-json-lint-config-default"
   ]
 }
