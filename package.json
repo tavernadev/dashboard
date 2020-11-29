@@ -10,6 +10,7 @@
     "test:lockfile": "lockfile-lint -a https://registry.npmjs.org -s -c -i -t npm -p package-lock.json",
     "test:audit": "npm audit",
     "test:md": "remark -f .",
+    "test:writing": "alex . && alex . --html",
     "test:json": "npmPkgJsonLint . ./packages --maxWarnings 0",
     "test:packages": "lerna run test --no-bail --stream --parallel",
     "fix": "npm-run-all -c fix:*",
@@ -33,6 +34,7 @@
   },
   "homepage": "https://taverna.dev/dashboard",
   "devDependencies": {
+    "alex": "^9.1.0",
     "depcheck": "^1.2.0",
     "eslint": "^7.9.0",
     "eslint-config-standard": "^14.1.1",
